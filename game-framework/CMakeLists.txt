@@ -1,6 +1,8 @@
 add_library(game-framework STATIC)
 
-target_include_directories(game-framework PUBLIC include)
+target_include_directories(game-framework PUBLIC include ${SFML_INCLUDE_DIR})
+
+target_link_libraries(game-framework PUBLIC sfml-system sfml-network sfml-graphics sfml-window sfml-audio)
 
 target_sources(game-framework PRIVATE
     source/component.cpp
