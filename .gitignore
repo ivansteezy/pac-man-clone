@@ -33,3 +33,10 @@
 
 #build dir
 build/
+
+#vs cachefiles
+/.vs
+CMakeSettings.json
+
+# vpkg modules
+vcpkg_installed/
